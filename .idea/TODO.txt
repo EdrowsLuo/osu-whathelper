@@ -1,0 +1,53 @@
+|-----------------------------------------------
+|Project:osu!whathelper
+|	。主界面：
+|		.侧边栏
+|		 ├设置:
+|		 │ ├Songs目录
+|		 │ ├
+|		 │ └MapPreferences
+|		 ├下载目录:
+|		 │ ├显示正在下载
+|		 │ ├下载目录Activity入口(fragment)
+|		 │ ├
+|		 └
+|		.map浏览器
+|		.sharedBeatmapPack界面
+|	。
+|	。
+|	。
+|	。
+|-----------------------------------------------
+|Project:TaskProject
+|	。W.let(Watcher).watch(Watchable)
+|	   .when(EventCode)//&.when(EventCode2)...
+|	    .do(Runnable(?))
+|	    .on(Thread;Looper)//default-
+|	。
+|	。
+|	。
+|	。
+|	。
+|-----------------------------------------------
+|Project:OsuFramework
+|	。sharedBeatmapPack
+|	。beatmapAnalyses
+|	。
+|	。
+|	。
+|-----------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
