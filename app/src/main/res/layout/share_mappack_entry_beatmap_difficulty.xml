@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content"
+	android:layout_width="match_parent"
+	android:background="@color/material_prime_blue_light">
+
+	<ImageView
+		android:background="@color/material_prime_white"
+		android:layout_height="64dp"
+		android:layout_width="75dp"
+		android:src="@drawable/default_bg"
+		android:layout_margin="5dp"
+		android:scaleType="centerCrop"
+		android:id="@+id/sharemappackentrybeatmapdifficultyImageView1"
+		android:padding="2dp"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:text="mapTitle no title"
+		android:layout_width="wrap_content"
+		android:layout_toRightOf="@id/sharemappackentrybeatmapdifficultyImageView1"
+		android:layout_centerInParent="false"
+		style="@style/TextView_White"
+		android:layout_margin="4dp"
+		android:id="@+id/title"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:text="ID:87392"
+		android:layout_width="wrap_content"
+		android:layout_below="@id/title"
+		android:layout_alignLeft="@id/title"
+		style="@style/TextView_White"
+		android:textSize="11sp"
+		android:id="@+id/id"/>
+
+</RelativeLayout>
+

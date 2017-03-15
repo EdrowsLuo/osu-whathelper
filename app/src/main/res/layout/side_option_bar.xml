@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:orientation="vertical">
+
+	<RelativeLayout
+		android:layout_height="30dp"
+		android:layout_width="match_parent">
+
+		<ImageView
+			android:layout_height="40dp"
+			android:layout_width="match_parent"
+			android:src="@drawable/buttonblue"
+			android:scaleType="centerCrop"
+			android:alpha="0.9"/>
+
+		<TextView
+			style="@style/TextView_SideOptionTitle"
+			android:layout_height="match_parent"
+			android:text="下载设置"
+			android:layout_width="match_parent"
+			android:padding="5dp"/>
+
+	</RelativeLayout>
+
+	<View
+		android:layout_height="2dp"
+		android:background="@color/material_field_gary_blue"
+		android:layout_width="match_parent"/>
+
+	<com.gc.materialdesign.views.ButtonFlat
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:padding="10dp"
+		android:layout_marginBottom="5dp"
+		android:layout_margin="7dp"
+		android:id="@+id/sideOptionSongsPath"
+		materialdesign:rippleSpeed="40"
+		materialdesign:clickAfterRipple="true">
+
+		<TextView
+			android:textColor="@color/material_text_dark"
+			android:layout_height="wrap_content"
+			android:text="Songs目录："
+			android:layout_width="wrap_content"
+			android:layout_margin="3dp"
+			android:id="@+id/songsPathTitle"
+			android:textSize="14sp"
+			android:textStyle="bold"/>
+
+		<TextView
+			android:textColor="@color/material_text_dark"
+			android:id="@+id/songsPathText"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:layout_below="@id/songsPathTitle"
+			android:layout_marginLeft="30dp"
+			android:layout_marginRight="0dp"
+			android:text="\?\?\? (●—●)"
+			android:textSize="11sp"
+			android:singleLine="false"
+			android:textStyle="bold"
+			android:alpha="0.8"/>
+
+	</com.gc.materialdesign.views.ButtonFlat>
+
+	<RelativeLayout
+		android:layout_height="30dp"
+		android:layout_width="match_parent">
+
+		<ImageView
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:src="@drawable/buttonblue"
+			android:scaleType="centerCrop"
+			android:alpha="0.9"/>
+
+		<TextView
+			android:layout_height="match_parent"
+			android:text="一些选项"
+			android:layout_width="match_parent"
+			android:padding="5dp"
+			style="@style/TextView_SideOptionTitle"/>
+
+	</RelativeLayout>
+
+	<View
+		android:layout_height="2dp"
+		android:background="@color/material_field_gary_blue"
+		android:layout_width="match_parent"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:text="RankState"
+		android:layout_width="wrap_content"
+		android:layout_marginLeft="5dp"
+		style="@style/TextView_Blue"
+		android:textColor="@color/material_text_dark"
+		android:textSize="14sp"
+		android:alpha="0.5"/>
+
+	<View
+		android:layout_height="1dp"
+		android:background="?android:attr/dividerVertical"
+		android:layout_width="match_parent"/>
+
+	<GridLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		rowCount="1"
+		columnCount="1"
+		android:layout_margin="5dp"
+		android:columnCount="2">
+
+		<com.edplan.osu.tool.whathelper.view.MyCheckBox
+			android:background="@color/material_prime_blue"
+			android:layout_height="25dp"
+			android:layout_width="wrap_content"
+			android:text="Ranked"
+			android:alpha="0.8"
+			android:textColor="@color/material_prime_blue"
+			android:textStyle="bold"
+			android:layout_margin="3dp"
+			materialdesign:check="true"
+			android:id="@+id/checkBox_Ranked"/>
+
+		<com.edplan.osu.tool.whathelper.view.MyCheckBox
+			android:background="@color/material_prime_blue"
+			android:layout_height="25dp"
+			android:layout_width="wrap_content"
+			android:text="Unrank"
+			android:alpha="0.8"
+			android:textColor="@color/material_prime_blue"
+			android:textStyle="bold"
+			android:layout_margin="3dp"
+			materialdesign:check="true"
+			android:id="@+id/checkBox_Unrank"/>
+
+		<com.edplan.osu.tool.whathelper.view.MyCheckBox
+			android:background="@color/material_prime_blue"
+			android:layout_height="25dp"
+			android:layout_width="wrap_content"
+			android:text="Approved"
+			android:alpha="0.8"
+			android:textColor="@color/material_prime_blue"
+			android:textStyle="bold"
+			android:layout_margin="3dp"
+			materialdesign:check="true"
+			android:id="@+id/checkBox_Approved"/>
+
+		<com.edplan.osu.tool.whathelper.view.MyCheckBox
+			android:background="@color/material_prime_blue"
+			android:layout_height="25dp"
+			android:layout_width="wrap_content"
+			android:text="Qualified"
+			android:alpha="0.8"
+			android:textColor="@color/material_prime_blue"
+			android:textStyle="bold"
+			android:layout_margin="3dp"
+			materialdesign:check="true"
+			android:id="@+id/checkBox_Qualified"/>
+
+	</GridLayout>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:text="Mode"
+		android:layout_width="wrap_content"
+		android:layout_marginLeft="5dp"
+		style="@style/TextView_Blue"
+		android:textSize="14sp"
+		android:alpha="0.5"
+		android:textColor="@color/material_text_dark"/>
+
+	<View
+		android:layout_height="1dp"
+		android:background="?android:attr/dividerVertical"
+		android:layout_width="match_parent"/>
+
+	<GridLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		rowCount="1"
+		columnCount="1"
+		android:layout_margin="5dp"
+		android:columnCount="2">
+
+		<com.edplan.osu.tool.whathelper.view.MyCheckBox
+			android:background="@color/material_prime_blue"
+			android:layout_height="25dp"
+			android:layout_width="wrap_content"
+			android:text="STD"
+			android:alpha="0.8"
+			android:textColor="@color/material_prime_blue"
+			android:textStyle="bold"
+			android:layout_margin="3dp"
+			materialdesign:check="true"
+			android:id="@+id/checkBox_std"/>
+
+		<com.edplan.osu.tool.whathelper.view.MyCheckBox
+			android:background="@color/material_prime_blue"
+			android:layout_height="25dp"
+			android:layout_width="wrap_content"
+			android:text="CTB"
+			android:alpha="0.8"
+			android:textColor="@color/material_prime_blue"
+			android:textStyle="bold"
+			android:layout_margin="3dp"
+			materialdesign:check="true"
+			android:id="@+id/checkBox_ctb"/>
+
+		<com.edplan.osu.tool.whathelper.view.MyCheckBox
+			android:background="@color/material_prime_blue"
+			android:layout_height="25dp"
+			android:layout_width="wrap_content"
+			android:text="TAIKO"
+			android:alpha="0.8"
+			android:textColor="@color/material_prime_blue"
+			android:textStyle="bold"
+			android:layout_margin="3dp"
+			materialdesign:check="true"
+			android:id="@+id/checkBox_taiko"/>
+
+		<com.edplan.osu.tool.whathelper.view.MyCheckBox
+			android:background="@color/material_prime_blue"
+			android:layout_height="25dp"
+			android:layout_width="wrap_content"
+			android:text="MANIA"
+			android:alpha="0.8"
+			android:textColor="@color/material_prime_blue"
+			android:textStyle="bold"
+			android:layout_margin="3dp"
+			materialdesign:check="true"
+			android:id="@+id/checkBox_mania"/>
+
+	</GridLayout>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:text="Site"
+		android:layout_width="wrap_content"
+		android:layout_marginLeft="5dp"
+		style="@style/TextView_Blue"
+		android:textSize="14sp"
+		android:alpha="0.5"
+		android:textColor="@color/material_text_dark"/>
+
+	<View
+		android:layout_height="1dp"
+		android:background="?android:attr/dividerVertical"
+		android:layout_width="match_parent"/>
+
+	<GridLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		rowCount="1"
+		columnCount="1"
+		android:layout_margin="5dp"
+		android:columnCount="1">
+		
+		<com.edplan.osu.tool.whathelper.view.MyCheckBox
+			android:background="@color/material_prime_blue"
+			android:layout_height="25dp"
+			android:layout_width="wrap_content"
+			android:text="Mengsky"
+			android:alpha="0.8"
+			android:textColor="@color/material_prime_blue"
+			android:textStyle="bold"
+			android:layout_margin="3dp"
+			materialdesign:check="true"
+			android:id="@+id/checkBox_Mengsky"/>
+
+		<com.edplan.osu.tool.whathelper.view.MyCheckBox
+			android:background="@color/material_prime_blue"
+			android:layout_height="25dp"
+			android:layout_width="wrap_content"
+			android:text="Bloodcat"
+			android:alpha="0.8"
+			android:textColor="@color/material_prime_blue"
+			android:textStyle="bold"
+			android:layout_margin="3dp"
+			materialdesign:check="false"
+			android:id="@+id/checkBox_bloodcat"/>
+		
+		
+	</GridLayout>
+
+	<View
+		android:layout_height="1dp"
+		android:background="?android:attr/dividerVertical"
+		android:layout_width="match_parent"/>
+
+	<RelativeLayout
+		android:layout_height="30dp"
+		android:layout_width="match_parent">
+
+		<ImageView
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:src="@drawable/buttonblue"
+			android:scaleType="centerCrop"
+			android:alpha="0.9"/>
+
+		<TextView
+			android:layout_height="match_parent"
+			android:text="下载列表"
+			android:layout_width="match_parent"
+			android:padding="5dp"
+			style="@style/TextView_SideOptionTitle"/>
+
+	</RelativeLayout>
+
+	<View
+		android:layout_height="2dp"
+		android:background="@color/material_field_gary_blue"
+		android:layout_width="match_parent"/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:minHeight="30dp"
+		android:padding="7dp"
+		android:id="@+id/sideDownloadList"/>
+
+	<RelativeLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent">
+
+		<com.gc.materialdesign.views.ButtonFlat
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:textColor="@color/material_text_light_blue"
+			android:padding="5dp">
+
+			<TextView
+				android:textColor="@color/material_text_dark_blue"
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:layout_marginLeft="25dp"
+				android:layout_marginRight="5dp"
+				android:text="test"
+				android:textSize="13sp"
+				android:singleLine="false"
+				android:layout_alignParentRight="true"
+				android:layout_centerInParent="true"
+				style="@style/TextView_Blue"/>
+
+		</com.gc.materialdesign.views.ButtonFlat>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_height="30dp"
+		android:layout_width="match_parent">
+
+		<ImageView
+			android:layout_height="40dp"
+			android:layout_width="match_parent"
+			android:src="@drawable/buttonblue"
+			android:scaleType="centerCrop"
+			android:alpha="0.9"/>
+
+		<TextView
+			style="@style/TextView_SideOptionTitle"
+			android:layout_height="match_parent"
+			android:text="一些工具"
+			android:layout_width="match_parent"
+			android:padding="5dp"/>
+
+	</RelativeLayout>
+
+	<View
+		android:layout_height="2dp"
+		android:background="@color/material_field_gary_blue"
+		android:layout_width="match_parent"/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:padding="6dp">
+
+		<com.gc.materialdesign.views.ButtonFlat
+			android:layout_height="wrap_content"
+			android:text="Mp工具临时入口"
+			android:layout_width="wrap_content"
+			android:id="@+id/mpActivityEntrance"/>
+
+	</LinearLayout>
+
+	<View
+		android:layout_height="500dp"
+		android:background="?android:attr/dividerHorizontal"
+		android:layout_width="1dp"/>
+
+</LinearLayout>
+

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content"
+	android:layout_width="match_parent"
+	android:orientation="vertical">
+
+	<RelativeLayout
+		android:layout_height="70dp"
+		android:layout_width="match_parent"
+		android:background="@color/material_blue_light">
+
+		<ImageView
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:src="@drawable/page_light"
+			android:scaleType="centerCrop"
+			android:alpha="0.5"/>
+
+		<RelativeLayout
+			android:layout_height="50dp"
+			android:layout_width="60dp"
+			android:layout_centerInParent="true"
+			android:layout_alignParentLeft="true"
+			android:layout_margin="3dp"
+			android:id="@+id/entrydownloadlistRelativeLayout1">
+
+			<ImageView
+				android:layout_height="match_parent"
+				android:layout_width="match_parent"
+				android:src="@drawable/default_bg"
+				android:layout_centerInParent="true"
+				android:layout_margin="4dp"
+				android:scaleType="centerCrop"
+				android:id="@+id/downloadCover"/>
+
+		</RelativeLayout>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="test"
+			android:layout_width="wrap_content"
+			android:layout_toRightOf="@id/entrydownloadlistRelativeLayout1"
+			android:layout_alignTop="@id/entrydownloadlistRelativeLayout1"
+			style="@style/TextView_Blue"
+			android:alpha="0.8"
+			android:id="@+id/entrydownloadlistTextView1"
+			android:layout_marginTop="-2dp"/>
+
+		<com.gc.materialdesign.views.ProgressBarDeterminate
+			android:id="@+id/downloadProgress"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:layout_toRightOf="@id/entrydownloadlistRelativeLayout1"
+			android:layout_alignBottom="@id/entrydownloadlistRelativeLayout1"
+			android:layout_marginRight="5dp"
+			android:layout_marginBottom="4dp"/>
+
+	</RelativeLayout>
+
+</LinearLayout>
+

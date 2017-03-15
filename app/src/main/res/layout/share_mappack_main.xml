@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:id="@+id/share_mappack_rootView"
+	android:layout_margin="10dp">
+
+	<RelativeLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:background="@color/material_prime_blue"
+		android:alpha="0.8"
+		android:layout_margin="2dp"
+		android:id="@+id/sharebeatmappackmainRelativeLayout1">
+
+		<ImageView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:src="@drawable/ic_folder_special_white_18dp"
+			android:layout_margin="5dp"
+			android:id="@+id/share_mappack_ic"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="PackTitle:1637 跳图评级"
+			android:layout_width="wrap_content"
+			android:layout_toRightOf="@id/share_mappack_ic"
+			android:layout_alignBottom="@id/share_mappack_ic"
+			android:layout_alignTop="@id/share_mappack_ic"
+			android:gravity="right|center"
+			style="@style/TextView_White"
+			android:textSize="18sp"
+			android:id="@+id/sharebeatmappackmainTextView1"/>
+
+		<View
+			android:layout_height="1dp"
+			android:background="@color/material_prime_white"
+			android:layout_width="match_parent"
+			android:layout_below="@id/sharebeatmappackmainTextView1"
+			android:id="@+id/sharebeatmappackmainView1"
+			android:alpha="0.9"
+			android:layout_marginLeft="3dp"
+			android:layout_marginRight="3dp"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="___家觉得呢室内设计那些那些就睡觉难兄难弟呢能吃就行呢见识见识那些那些呢"
+			android:layout_width="wrap_content"
+			style="@style/TextView_White"
+			android:textSize="12sp"
+			android:layout_alignLeft="@id/share_mappack_ic"
+			android:padding="7dp"
+			android:layout_below="@id/sharebeatmappackmainView1"/>
+
+	</RelativeLayout>
+
+	<FrameLayout
+		android:background="@color/material_prime_white"
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:layout_below="@id/sharebeatmappackmainRelativeLayout1"
+		android:layout_margin="2dp"/>
+
+</RelativeLayout>
+

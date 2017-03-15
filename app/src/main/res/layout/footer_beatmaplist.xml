@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content"
+	android:layout_width="match_parent">
+
+	<Button
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:id="@+id/moreButton"
+		android:layout_centerInParent="true"
+		android:layout_margin="10dp"
+		android:background="#9AD4F8"
+		android:text="TODO:Get more data"
+		android:textStyle="bold"
+		android:textColor="#FEFEFE"
+		android:layout_alignParentTop="true"/>
+
+	<Button
+		android:layout_height="50dp"
+		android:text="show"
+		android:layout_width="wrap_content"
+		android:layout_below="@id/moreButton"
+		android:layout_alignLeft="@id/moreButton"
+		android:layout_alignRight="@id/moreButton"
+		android:background="#4FB1F6"
+		android:textSize="20sp"
+		android:textColor="#FFFFFF"
+		android:textStyle="bold"
+		android:id="@+id/showButton"/>
+
+</RelativeLayout>
+

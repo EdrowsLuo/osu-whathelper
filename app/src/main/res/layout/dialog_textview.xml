@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:background="@color/material_field_gary"
+	android:id="@+id/dialogRootView">
+
+	<RelativeLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_centerInParent="true"
+		android:background="@drawable/dialog_background"
+		android:padding="30dp"
+		android:id="@+id/dialogMainView">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="title:textinputName"
+			android:layout_width="wrap_content"
+			style="@style/TextView_Blue"
+			android:id="@+id/dialogTitle"/>
+
+		<ScrollView
+			android:layout_below="@id/dialogTitle"
+			android:layout_height="400dp"
+			android:layout_width="250dp"
+			android:id="@+id/scoller">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="200dp"
+				android:id="@+id/dialogTextView"
+				android:background="#00000000"
+				style="@style/EditText_Blue"/>
+
+		</ScrollView>
+
+		<View
+			android:layout_height="1dp"
+			android:layout_width="wrap_content"
+			android:layout_below="@id/dialogTitle"
+			android:layout_alignRight="@id/scoller"
+			android:background="@color/material_field_gary_blue"
+			android:alpha="0.01"/>
+
+		<LinearLayout
+			android:layout_height="30dp"
+			android:layout_width="wrap_content"
+			android:orientation="horizontal"
+			android:layout_below="@id/scoller"
+			android:layout_alignRight="@id/scoller"
+			android:layout_alignLeft="@id/scoller"
+			android:id="@+id/dialogtextinputLinearLayout1"
+			android:gravity="right|center">
+
+			<com.gc.materialdesign.views.ButtonFlat
+				android:id="@+id/dialogAcceptB"
+				android:layout_width="40dp"
+				android:layout_height="wrap_content"
+				android:text="确定"/>
+
+			<com.gc.materialdesign.views.ButtonFlat
+				android:id="@+id/dialogCancelB"
+				android:layout_width="40dp"
+				android:layout_height="wrap_content"
+				android:text="取消"/>
+
+		</LinearLayout>
+
+		<View
+			android:layout_height="1dp"
+			android:background="@color/material_field_gary_blue"
+			android:layout_width="match_parent"
+			android:layout_above="@id/dialogtextinputLinearLayout1"
+			android:layout_alignRight="@id/scoller"
+			android:alpha="0.2"/>
+
+	</RelativeLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="100dp"
+	android:layout_width="match_parent"
+	android:id="@+id/mapView"
+	android:padding="0dp"
+	android:paddingLeft="0dp"
+	android:paddingRight="0dp">
+
+	<com.gc.materialdesign.views.Card
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_centerInParent="true"
+		android:background="@color/beatmapmanuEntry_background"
+		android:layout_marginLeft="7dp"
+		android:layout_marginRight="7dp"
+		android:padding="2dp">
+
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginTop="0dp"
+			android:layout_alignParentBottom="true"
+			android:layout_marginBottom="0dp"
+			android:src="@drawable/page_light"
+			android:id="@+id/entrybeatmaplistView1"
+			android:scaleType="centerCrop"
+			android:alpha="0.4"/>
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="13dp"
+			android:layout_alignParentBottom="true"
+			android:background="@color/beatmapmanuEntry_datacard"
+			android:alpha="0.6"/>
+
+		<com.gc.materialdesign.views.Card
+			android:id="@+id/coverCard"
+			android:layout_width="104dp"
+			android:layout_height="86dp"
+			android:layout_margin="2dp"
+			android:layout_marginRight="3dp"
+			android:background="#FFFFFF">
+
+			<ImageView
+				android:layout_width="97dp"
+				android:layout_height="78dp"
+				android:layout_margin="2dp"
+				android:id="@+id/beatmapCover"
+				android:src="@drawable/default_bg"
+				android:scaleType="centerCrop"/>
+
+		</com.gc.materialdesign.views.Card>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="no title"
+			android:id="@+id/mapsetTitle"
+			android:layout_marginTop="8dp"
+			android:textSize="10sp"
+			android:textStyle="bold"
+			android:textColor="@color/beatmapmanuEntry_titleColor"
+			android:layout_toRightOf="@id/coverCard"
+			android:layout_alignTop="@id/beatmapCover"
+			android:shadowColor="#77A2A2A2"
+			android:shadowRadius="1.05"
+			android:shadowDx="1.0"
+			android:shadowDy="1.0"
+			android:maxWidth="200dp"
+			android:singleLine="true"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:id="@+id/mapsetId"
+			android:layout_toRightOf="@id/coverCard"
+			android:layout_below="@id/mapsetTitle"
+			android:text="123456"
+			android:textSize="6sp"
+			android:textStyle="bold"
+			android:textColor="@color/beatmapmanuEntry_dataTextColor"
+			android:gravity="top|left"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="creater: 鹿乃"
+			android:layout_width="wrap_content"
+			android:layout_below="@id/mapsetId"
+			android:layout_toRightOf="@id/coverCard"
+			android:id="@+id/artist"
+			android:textStyle="bold"
+			android:textSize="8sp"
+			android:textColor="@color/beatmapmanuEntry_dataTextColor"
+			android:singleLine="true"
+			android:maxWidth="200dp"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="Creator: Hollon Wings"
+			android:layout_width="wrap_content"
+			android:layout_below="@id/artist"
+			android:layout_toRightOf="@id/coverCard"
+			android:id="@+id/mapperName"
+			android:textSize="8sp"
+			android:textStyle="bold"
+			android:textColor="@color/beatmapmanuEntry_dataTextColor"
+			android:singleLine="true"
+			android:maxWidth="200dp"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="Ranked/Unrank/Approved/Qualified"
+			android:layout_width="wrap_content"
+			android:layout_below="@id/mapperName"
+			android:layout_toRightOf="@id/coverCard"
+			android:id="@+id/rankStatu"
+			android:textSize="8sp"
+			android:textStyle="bold"
+			android:textColor="@color/beatmapmanuEntry_dataTextColor"
+			android:singleLine="true"
+			android:maxWidth="200dp"/>
+
+		<LinearLayout
+			android:layout_height="15dp"
+			android:layout_width="wrap_content"
+			android:orientation="horizontal"
+			android:layout_alignParentBottom="true"
+			android:layout_toRightOf="@id/coverCard"
+			android:layout_marginBottom="5dp">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/bpm"
+				android:text="BPM:233.3"
+				android:textSize="9sp"
+				android:textStyle="bold"
+				android:textColor="#FFFFFF"
+				android:shadowColor="#77474747"
+				android:shadowRadius="1.1"
+				android:shadowDx="1.1"
+				android:shadowDy="1.1"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="Length: 1:33"
+				android:id="@+id/length"
+				android:layout_width="wrap_content"
+				android:layout_marginLeft="2dp"
+				android:textSize="9sp"
+				android:textStyle="bold"
+				android:textColor="#FFFFFF"
+				android:shadowColor="#77474747"
+				android:shadowRadius="1.1"
+				android:shadowDx="1.1"
+				android:shadowDy="1.1"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="15dp"
+			android:orientation="vertical"
+			android:layout_alignParentRight="true"
+			android:layout_margin="8dp"
+			android:alpha="0.7">
+
+			<ImageView
+				android:layout_height="15dp"
+				android:layout_width="15dp"
+				android:id="@+id/modeImage_STD"
+				android:src="@drawable/mode_osu"/>
+
+			<ImageView
+				android:id="@+id/modeImage_TAIKO"
+				android:layout_height="15dp"
+				android:layout_width="15dp"
+				android:src="@drawable/mode_taiko"/>
+
+			<ImageView
+				android:id="@+id/modeImage_CTB"
+				android:layout_height="15dp"
+				android:layout_width="15dp"
+				android:src="@drawable/mode_ctb"/>
+
+			<ImageView
+				android:id="@+id/modeImage_MANIA"
+				android:layout_height="15dp"
+				android:layout_width="15dp"
+				android:src="@drawable/mode_mania"/>
+
+		</LinearLayout>
+
+		<TextView
+			android:id="@+id/syncedDateTime"
+			android:layout_height="wrap_content"
+			android:text="!!@@##%@"
+			android:layout_width="wrap_content"
+			style="@style/TextView_Blue"
+			android:textSize="7sp"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="true"
+			android:layout_margin="2dp"
+			android:alpha="0.3"/>
+
+	</com.gc.materialdesign.views.Card>
+
+</RelativeLayout>
+

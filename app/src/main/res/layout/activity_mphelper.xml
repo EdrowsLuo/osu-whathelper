@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:id="@+id/mpAtyRootLayout"
+	android:background="@color/material_prime_blue_light">
+
+	<ImageView
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:src="@drawable/page_light"
+		android:scaleType="centerCrop"
+		android:alpha="0.5"/>
+
+	<RelativeLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:padding="10dp">
+
+		<RelativeLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:background="@color/material_prime_blue"
+			android:alpha="0.6">
+
+			<ImageView
+				android:layout_height="75dp"
+				android:layout_width="90dp"
+				android:src="@drawable/default_bg"
+				android:layout_margin="5dp"
+				android:scaleType="centerCrop"
+				android:padding="2dp"
+				android:background="@color/material_prime_white"/>
+
+		</RelativeLayout>
+
+	</RelativeLayout>
+
+</RelativeLayout>
+

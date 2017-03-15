@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">osu!whathelper</string>
+    <string name="hello_world">Hello world!</string>
+
+	<string name="mp_activity_name">MpHelper</string>
+	
+	
+</resources>

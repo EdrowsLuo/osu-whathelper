@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:background="@color/material_field_gary"
+	android:id="@+id/dialogRootView">
+
+	<RelativeLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_centerInParent="true"
+		android:background="@drawable/dialog_background"
+		android:padding="30dp"
+		android:id="@+id/dialogMainView">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="title:progress"
+			android:layout_width="wrap_content"
+			style="@style/TextView_Blue"
+			android:id="@+id/dialogTitle"
+			android:layout_marginBottom="20dp"/>
+
+		<com.gc.materialdesign.views.ProgressBarDeterminate
+			android:layout_height="wrap_content"
+			android:layout_width="200dp"
+			android:layout_below="@id/dialogTitle"
+			android:id="@+id/dialogProgressBar"
+			android:layout_marginBottom="10dp"/>
+
+		<LinearLayout
+			android:layout_height="30dp"
+			android:layout_width="wrap_content"
+			android:orientation="horizontal"
+			android:layout_below="@id/dialogProgressBar"
+			android:layout_alignRight="@id/dialogProgressBar"
+			android:layout_alignLeft="@id/dialogProgressBar"
+			android:id="@+id/dialogtextinputLinearLayout1"
+			android:gravity="right|center">
+
+			<com.gc.materialdesign.views.ButtonFlat
+				android:layout_width="40dp"
+				android:layout_height="wrap_content"
+				android:text="确定"/>
+
+			<com.gc.materialdesign.views.ButtonFlat
+				android:layout_width="40dp"
+				android:layout_height="wrap_content"
+				android:text="取消"/>
+
+		</LinearLayout>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="0B/0B"
+			android:layout_width="wrap_content"
+			android:layout_above="@id/dialogProgressBar"
+			android:layout_alignRight="@id/dialogProgressBar"
+			style="@style/TextView_Blue"
+			android:textSize="10sp"
+			android:id="@+id/dialogProgressText"
+			android:layout_margin="2dp"/>
+
+	</RelativeLayout>
+
+</RelativeLayout>
+
