@@ -1,3 +1,3 @@
 # osu-whathelper
-一个android端的osu工具
-废了废了。。。Mengsky删库跑路了，Bloodcat有e叔的，大家下个app见
+不忍直视的黑历史。
+请前往全新的优秀的[下图器](https://github.com/EdrowsLuo/BeatmapService)
